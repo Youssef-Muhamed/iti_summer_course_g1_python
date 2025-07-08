@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h2>Register New Account</h2>
+    <form method="POST" action="welcome.html">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" placeholder="ahmed etc.."><br><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" value="Mohamed"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required ><br><br>
+
+        <label for="Password">Password:</label>
+        <input type="password" id="Password" name="password" ><br><br>
+
+         <label for="phone">Phone Number:</label>
+        <input type="number" id="phone" name="phone" ><br><br>
+
+         <label for="dob">Date of birth:</label>
+        <input type="date" id="dob" name="dob" ><br><br>
+
+         <label for="color">Color:</label>
+        <input type="color" id="color" name="color" ><br><br>
+
+         <label for="range">Range Salary:</label>
+        <input type="range"  min="0" max="10" id="range" name="color" ><br><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="gender" name="gender" value="m" checked> Male
+        <input type="radio" id="gender" name="gender" value="f"> Female<br><br>
+
+        <label for="cv">CV:</label>
+        <input type="file" id="cv" name="cv" accept=".pdf"> <br><br>
+
+        <label for="skills">Skills:</label>
+        <select id="skills" name="skills">
+            <option value="" selected >select your skils</option>
+            <option value="html">HTML</option>
+            <option value="css" >CSS</option>
+            <option value="js">JavaScript</option>
+            <option value="python">Python</option>
+        </select><br><br>
+
+       <label for="hobbies">Hobbies:</label><br>
+        <input type="checkbox" id="hobies" name="hobies" value="reading" checked> Reading<br>
+        <input type="checkbox" id="hobies" name="hobies" value="traveling"> Traveling<br>
+        <input type="checkbox" id="hobies" name="hobies" value="gaming"> Gaming<br>
+        <input type="checkbox" id="hobies" name="hobies" value="cooking"> Cooking<br><br>
+
+        <label for="browser">Choose your browser from the list:</label>
+  <input list="browsers" name="browser" id="browser">
+  <datalist id="browsers">
+    <option value="Edge">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+<br><br>
+        
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>

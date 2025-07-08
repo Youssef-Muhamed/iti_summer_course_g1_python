@@ -1,0 +1,89 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap'); */
+/* .cairo-font {
+  font-family: "Cairo", sans-serif;
+} */
+ @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Manufacturing+Consent&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+body{
+    /* margin: 0; */
+}
+ .parent{
+    /* font-size: 100px; */
+    height: 400px;
+    width: 50%;
+    border: 5px solid black;
+    margin-left:20px ;
+    outline: 2px solid red;
+    padding: 5px;
+    /* border-radius: 50%; */
+    background-color: #fff;
+    background-position: center;
+    background-repeat: repeat;
+    position: relative;
+    /* background-image: url('https://www.shutterstock.com/shutterstock/photos/2212935531/display_1500/stock-photo-calm-weather-on-sea-or-ocean-with-clouds-2212935531.jpg'); */
+    /* background-image: url('img.jpg'); */
+
+}
+.child{
+    border: 3px solid black;
+    height: 100px;
+    width: 100px;
+    /* float: right; 
+    /* position: absolute;
+    /* margin: auto; 
+    top: 50%;
+    left: 50%; */
+}
+#new-text {
+    color: blueviolet;
+    font-size: 20px; /*em --> parent, rem --> for body */
+     /* font-family: "Cairo", sans-serif;
+     font-weight: bold; */
+     font: 1rem sans-serif;
+     text-align: left;
+     text-decoration: underline dotted red;
+     text-transform: capitalize;
+     /* text-wrap: nowrap; */
+     /* overflow: scroll; */
+     line-height: 3;
+    /* letter-spacing: 5px; */
+        word-spacing: 10px;
+        /* font-style: italic; */
+        /* font-variant: small-caps; */
+        /* font-stretch: expanded; */
+        /* font-size-adjust: 0.5; */
+        /* font-kerning: normal; */
+        /* font-feature-settings: "liga" 1, "kern" 1; */
+        /* text-shadow: 2px 2px 4px #000000; */
+    /* display: none; */
+    visibility: hidden;
+
+}
+.text{
+    color: red;
+    /* display: inline-block; */
+    border: 1px solid black;
+    width: 1000px;
+}
+.span1{
+    display: inline-block;
+    width: 100px;
+}
+a{
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Cairo", sans-serif;
+}
+
+a:visited {
+    color: green;
+}
+a:hover {
+    color: red;
+}
+
+div > :not(:first-child) {
+    background-color: green !important;
+}
