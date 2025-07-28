@@ -1,0 +1,18 @@
+{% extends 'posts/base.html' %}
+{%block title%}
+Contactus
+{%endblock title%}
+{% block content %}
+ <div class="container">
+       <h1>Users</h1>
+  <ul>
+    {% for user in users %}
+      {% if user == 'alaa' %}
+      <li style="color:red">{{user}}</li>
+      {% else %}
+      <li>{{user}}</li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+ </div>
+{% endblock content %}
