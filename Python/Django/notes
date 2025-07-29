@@ -1,0 +1,25 @@
+ - Delete Posts
+ - to upload image u must install this package
+     * pip install Pillow
+     * pip install django-cleanup   ==> and add it in INSTALLED_APPS
+
+     * and add this in settings.py
+         MEDIA_URL = '/media/'
+         MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+     * add to urls.py
+         from django.conf.urls.static import static
+         from django.conf import settings
+         urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+     * add in models and replace src with image
+          def get_image_url(self):
+            if self.image:
+                return f'/media/{self.image}'
+            return ''
+
+ - create post
+  * create html page
+  * button in posts index page
+  * create url
+  * create view
+    check request get or post
+    save post
